@@ -8,7 +8,13 @@ public class Carro {
     private double capacidadeTanque;
     private double dispCombustivel;
 
-    // construtor, getters e setters
+    public Carro(String placa, double consumo, double capacidadeTanque) {
+        this.placa = placa;
+        this.consumo = consumo;
+        this.capacidadeTanque = capacidadeTanque;
+        this.hodometro = 0;
+        this.dispCombustivel = 0;
+    }
 
     public double abastecer(double litros) {
         if (litros <= 0) {
@@ -45,4 +51,44 @@ public class Carro {
         return kmReal;
     }
 
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public double getHodometro() {
+        return hodometro;
+    }
+
+    public void setHodometro(double hodometro) {
+        this.hodometro = hodometro;
+    }
+
+    public double getConsumo() {
+        return consumo;
+    }
+
+    public void setConsumo(double consumo) {
+        this.consumo = consumo;
+    }
+
+    public double getCapacidadeTanque() {
+        return capacidadeTanque;
+    }
+
+    public void setCapacidadeTanque(double capacidadeTanque) {
+        this.capacidadeTanque = capacidadeTanque;
+    }
+
+    public double getDispCombustivel() {
+        return dispCombustivel;
+    }
+
+    public void setDispCombustivel(double dispCombustivel) {
+        this.dispCombustivel = dispCombustivel;
+    }
+}
 }
